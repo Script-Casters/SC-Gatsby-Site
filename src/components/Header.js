@@ -4,20 +4,20 @@ import PropTypes from 'prop-types'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <span className="icon fa-diamond"></span>
+            <span className="icon fa-superpowers"></span>
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Frankie Rodriguez</h1>
-                <p>Full stack developer </p>
+                <h1>Script Casters</h1>
+                <p>Tech Solutions Collective</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
+                <li><a onClick={() => {props.onOpenArticle('intro')}}>Vision</a></li>
                 <li><a onClick={() => {props.onOpenArticle('work')}}>Projects</a></li>
-                <li><a onClick={() => {props.onOpenArticle('resume')}}>Resume</a></li>
-                <li><a onClick={() => {props.onOpenArticle('book')}}>Book Me</a></li>
+                <li><a onClick={() => {props.onOpenArticle('members')}}>Members</a></li>
+                <li><a onClick={() => {props.onOpenArticle('book')}}>Book Us</a></li>
                 <li><a onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>

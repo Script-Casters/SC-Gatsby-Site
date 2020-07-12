@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Intro from "./articles/Intro";
 import Projects from "./articles/Projects";
-import Resume from "./articles/Resume";
 import Contact from "./articles/Contact";
+import Members from './articles/Members';
 
 class Main extends React.Component {
     render() {
@@ -45,13 +45,13 @@ class Main extends React.Component {
                 </article>
 
                 <article
-                    id="resume"
-                    className={`${this.props.article === 'resume' ? 'active' : ''} ${
+                    id="members"
+                    className={`${this.props.article === 'members' ? 'active' : ''} ${
                         this.props.articleTimeout ? 'timeout' : ''
                     }`}
                     style={{display: 'none'}}
                 >
-                    <Resume/>
+                    <Members/>
                     {close}
                 </article>
 

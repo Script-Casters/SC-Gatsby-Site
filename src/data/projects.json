@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Visit Delaware",
+    "desc": "Mobile Application made with the Ionic framework and a Spring Boot backend alongside a PostGreSQL database. Visit Delaware functions as a travel itinerary app for the state of Delaware. Awarded the first place \"Innovation Award\" in the Open Data Challenge.",
+    "gitHubLink": "https://github.com/ghost1497/ZipCodeOpenDataChallenge",
+    "img": "visitdelaware.png",
+    "siteLink": "https://www.youtube.com/watch?v=8aFBXHAXpIs&feature=youtu.be"
+  },
+  {
+    "name": "FR PROGRAMMING",
+    "desc": "Built in Gatsby.JS and includes professional information such as a personal biography, list of projects, and a contact form. Customer booking portal based in React.JS coming soon.",
+    "gitHubLink": "https://github.com/ghost1497/Portfolio-Gatsby-Starter",
+    "img": "frprogramming.png"
+  },
+  {
+    "name": "Mad Beatz Philly",
+    "desc": "Contracted to develop the new official website in Word Press for Mad Beatz Philly, a nonprofit organization devoted to providing inner city students in Philadelphia an avenue through the power of drum line.",
+    "gitHubLink": "https://github.com/ghost1497/Portfolio-Gatsby-Starter",
+    "img": "madbeatz.png",
+    "siteLink": "https://www.madbeatzphilly.com"
+  },
+  {
+    "name": "OK Chapter Site",
+    "desc": "Official website of the Omicron Kappa Chapter of Kappa Alpha Psi Fraternity Inc. Website made in React.JS and utilizes services such as Email.JS, Firebase and Google Calendar. Awarded regional and national accolades via competition entry.",
+    "gitHubLink": "https://github.com/ghost1497/OKC-Website",
+    "img": "ovoknupes.png",
+    "siteLink": "https://www.ovoknupes.com"
+  }
+]

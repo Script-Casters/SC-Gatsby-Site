@@ -1,6 +1,5 @@
 import React from "react";
 import {Page} from 'react-pdf';
-import doc from "../../data/Resume_12_2019.pdf";
 import {Document} from 'react-pdf/dist/entry.webpack';
 import {useState, useEffect} from 'react';
 import { window } from 'browser-monads';

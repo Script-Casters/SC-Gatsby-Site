@@ -33,11 +33,15 @@ class Projects extends React.Component {
                     .map(key => <div className="box">
                         <h1>{this.state.posts[key].name}</h1>
                         <img className="image fit" src={require('../../images/' + this.state.posts[key].img)}
-                             alt="img"/>
+                            alt="img" />
                         <p>{this.state.posts[key].desc}</p>
                         <div className="button-container">
-                            <a className="button" href={this.state.posts[key].gitHubLink} target="_blank" rel="noopener noreferrer" >Git Hub
-                                Project</a>
+
+                            {
+                                this.state.posts[key].gitHubLink ?
+                                    <a className="button" href={this.state.posts[key].gitHubLink} target="_blank" rel="noopener noreferrer" >Git Hub
+                                Project</a> : null
+                            }
                             {
                                 this.state.posts[key].siteLink ?
                                     <a className="button" href={this.state.posts[key].siteLink} target="_blank" rel="noopener noreferrer" >Website

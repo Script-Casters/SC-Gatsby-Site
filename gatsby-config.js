@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Frankie Rodriguez Portfolio',
-        short_name: 'starter',
+        name: 'Script Casters',
+        short_name: 'SC Site',
         start_url: '/',
         background_color: '#990815',
         theme_color: '#990815',

@@ -7,43 +7,59 @@ const Intro = () => {
         <div>
             <h2 className="major">About</h2>
             <span className="image main">
-        <img className="image fit right" src={revdiamond} alt=""/>
-        </span>
-            <p>Frankie Rodriguez is a Software Engineer based within Wilmington, DE and Philadelphia, PA. After
-                dedicating himself to his education through a twelve-week intensive coding boot camp, Rodriguez has
-                worked professionally and personally on his craft. He has been employed with CSC as a Software Engineer
-                for nearly two years and also works as a Freelance Software Developer, outsourcing his skills to clients
-                in need of application and web design. </p>
-            <h3>BECOMING A SOFTWARE ENGINEER</h3>
-            <p>While attending Lehigh University in Bethlehem, PA, Rodriguez majored in Computer Engineering. This major
-                is an interdisciplinary between Computer Science and Electrical Engineering, with a stronger emphasis on
-                Electrical Engineering. After taking up his first programming class in his junior year of college, a
-                passion was ignited that Rodriguez couldn’t ignore. He desired a change in his major in order to focus
-                solely on Computer Science, however, this had proven to be a difficult feat because he was so far into
-                his college career. </p><p>Fear Not! </p><p>Rodriguez was fortunate enough to have the opportunity to
-                attend <a href="https://www.zipcodewilmington.com" target="_blank" rel="noopener noreferrer">Zip Code Wilmington</a>
-            , a vigorous, twelve-week coding boot camp that
-            aims to turn its students into full stack developers, armed with the tools to enter the Software Development
-            industry. He dedicated nearly 1200 hours to his passion and graduated the program in Spring 2018. Shortly
-            after, Rodriguez began work at Corporation Service Company (CSC). </p>
-            <h3>PRESENT EMPLOYMENT</h3>
+                <img className="image fit right" src={revdiamond} alt="" />
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+                eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut 
+                metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper 
+                ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper 
+                libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. 
+                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales 
+                sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
+                Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. 
+                Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+            <h3>BECOMING A COLLECTIVE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+                eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut 
+                metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper 
+                ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper 
+                libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. 
+                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales 
+                sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
+                Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. 
+                Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+            <h3>FUTURE VISION</h3>
             <p>
-                Rodriguez is currently employed at Corporation Service Company (CSC) as an Associate Software Engineer.
-                At CSC, Rodriguez is responsible for the maintenance and development of a full-stack application that
-                includes an Angular front end, Spring API, and an Oracle Database. In addition to the primary stack of
-                this internal-facing application, his team also responsible for the maintenance and development of a
-                legacy Java application. Aside from his daily development responsibility, he has assisted on many
-                projects that have guided his team into a more updated state of operation. Some examples of this include
-                migrating the team’s SVN repositories over to Github, establishing Jenkins deployment pipelines to
-                support the newly migrated codebases, and assisted in the documentation of standard development
-                practices.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+                eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut 
+                metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper 
+                ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper 
+                libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. 
+                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales 
+                sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
+                Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. 
+                Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. 
             </p>
-            <p>One of Rodriguez’s most notable contributions to CSC, outside of his team-related responsibilities, was
-                his participation in an internally-operated hackathon. On a team of five, he was tasked with creating a
-                desk reservation system that would assist CSC employees in reserving available/open desks in HQ.
-                Although the functionality of the application was minimal at the end of the competition due to the time
-                constraint, the decision was made to continue work on the application in order to bring this service to
-                life for CSC employees.</p>
+
+            <h2>*Insert timeline graphic*</h2>
 
         </div>
     );

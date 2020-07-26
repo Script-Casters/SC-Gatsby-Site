@@ -150,12 +150,12 @@ class Contact extends React.Component {
             </form>
             <ul className="icons">
                 <li>
-                    <a href="mailto:rfrankie04@gmail.com" className="icon fa-at" target="_blank"
+                    <a href="mailto:scriptcasters@gmail.com" className="icon fa-at" target="_blank"
                        rel="noopener noreferrer">
                         <span className="label">Email</span>
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a href="https://www.linkedin.com/in/frankierodriguezjr/" className="icon fa-linkedin"
                        target="_blank" rel="noopener noreferrer">
                         <span className="label">Linkedin</span>
@@ -170,7 +170,7 @@ class Contact extends React.Component {
                     >
                         <span className="label">GitHub</span>
                     </a>
-                </li>
+                </li> */}
             </ul>
         </div>);
     }

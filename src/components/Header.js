@@ -17,7 +17,7 @@ const Header = (props) => (
                 <li><a onClick={() => {props.onOpenArticle('intro')}}>Vision</a></li>
                 <li><a onClick={() => {props.onOpenArticle('work')}}>Projects</a></li>
                 <li><a onClick={() => {props.onOpenArticle('members')}}>Members</a></li>
-                <li><a onClick={() => {props.onOpenArticle('book')}}>Book Us</a></li>
+                <li><a onClick={() => {props.onOpenArticle('book')}}>Services</a></li>
                 <li><a onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>

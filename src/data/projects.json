@@ -2,13 +2,13 @@
   {
     "name": "Overseas Basketball Connection",
     "desc": "",
-    "img": "obc.png",
+    "img": "projects/obc.png",
     "siteLink": "https://overseasbasketballconnection.com"
   },
   {
     "name": "Mad Beatz Philly",
     "desc": "Contracted to develop the new official website in Word Press for Mad Beatz Philly, a nonprofit organization devoted to providing inner city students in Philadelphia an avenue through the power of drum line.",
-    "img": "madbeatz.png",
+    "img": "projects/madbeatz.png",
     "siteLink": "https://www.madbeatzphilly.com"
   }
 ]

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Frankie Rodriguez Portfolio",
+    title: "Script Casters",
     author: "Frankie Rodriguez",
     description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
   },

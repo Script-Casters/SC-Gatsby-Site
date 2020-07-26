@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Frankie Rodriguez (CEO)",
+    "desc": "Software Engineer based within Wilmington, DE and Philadelphia, PA. After dedicating himself to his education through a twelve-week intensive coding boot camp, Rodriguez has worked professionally and personally on his craft. He has been employed with CSC as a Software Engineer for nearly two years and also works as a Freelance Software Developer, outsourcing his skills to clients in need of application and web design.",
+    "img": "frankie.jpg",
+    "siteLink": "https://www.frprogramming.com/",
+    "gitHubLink": "https://github.com/ghost1497"
+  },
+  {
+    "name": "Leon Hunter (CIO)",
+    "desc": "Experienced Technical Instructor with a demonstrated history of working in the computer software industry. Highly skilled in Cloud Native Application Development using Java8, Spring, Mockito, and Angular. Strong information technology professional with a Bachelor of Science (BS) focused in Computer Science, Mathematics Minor from Delaware State University.",
+    "img": "leon.png",
+    "siteLink": "https://www.linkedin.com/in/leon-hunter-3230408b?trk=people-guest_people_search-card",
+    "gitHubLink": "https://github.com/Git-Leon"
+  }
+]

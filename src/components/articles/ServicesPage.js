@@ -48,7 +48,7 @@ class ServicesPage extends React.Component {
                                 .keys(this.state.posts)
                                 .map(key => <div className="box">
                                     <h1>{this.state.posts[key].name}</h1>
-                                    <img className="image fit right" src={require('../../images/services/' + this.state.posts[key].img)}
+                                    <img className="image fit right" src={require('../../images/servicesoffered/' + this.state.posts[key].img)}
                                         alt="img" />
                                     <p>{this.state.posts[key].desc}</p>
                                     <h3>Est Cost: ${this.state.posts[key].estPrice}</h3>

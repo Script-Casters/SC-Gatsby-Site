@@ -9,7 +9,7 @@ const encode = (data) => {
         .join("&");
 };
 
-class Contact extends React.Component {
+class ServicesForm extends React.Component {
     static initState = {
         formControls: {
             name: {
@@ -42,7 +42,7 @@ class Contact extends React.Component {
 
     constructor() {
         super();
-        this.state = Contact.initState;
+        this.state = ServicesForm.initState;
 
     }
 
@@ -107,12 +107,12 @@ class Contact extends React.Component {
     }
 
     resetStateValues() {
-        this.setState(Contact.initState);
+        this.setState(ServicesForm.initState);
     }
 
     render() {
         return (<div>
-            <h2 className="major">Contact</h2>
+            <h2 className="major">Booking Form</h2>
             <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
                 <input type="hidden" name="form-name" value="contact"/>
                 <div className="field half first">
@@ -148,34 +148,10 @@ class Contact extends React.Component {
                     </li>
                 </ul>
             </form>
-            <ul className="icons">
-                <li>
-                    <a href="mailto:scriptcasters@gmail.com" className="icon fa-at" target="_blank"
-                       rel="noopener noreferrer">
-                        <span className="label">Email</span>
-                    </a>
-                </li>
-                {/* <li>
-                    <a href="https://www.linkedin.com/in/frankierodriguezjr/" className="icon fa-linkedin"
-                       target="_blank" rel="noopener noreferrer">
-                        <span className="label">Linkedin</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/ghost1497"
-                        className="icon fa-github"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span className="label">GitHub</span>
-                    </a>
-                </li> */}
-            </ul>
         </div>);
     }
 
 
 }
 
-export default Contact;
+export default ServicesForm;

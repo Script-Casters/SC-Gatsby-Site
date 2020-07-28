@@ -42,7 +42,7 @@ class Members extends React.Component {
                     .keys(this.state.posts)
                     .map(key => <div className="box">
                         <h1>{this.state.posts[key].name}</h1>
-                        <img className="image fit" src={require('../../images/members/' + this.state.posts[key].img)}
+                        <img className="image fit right" src={require('../../images/members/' + this.state.posts[key].img)}
                             alt="img" />
                         <p>{this.state.posts[key].desc}</p>
                         <div className="button-container">

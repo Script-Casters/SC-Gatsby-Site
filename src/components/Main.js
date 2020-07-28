@@ -4,6 +4,7 @@ import Intro from "./articles/Intro";
 import Projects from "./articles/Projects";
 import Contact from "./articles/Contact";
 import Members from './articles/Members';
+import ServicesPage from './articles/ServicesPage';
 
 class Main extends React.Component {
     render() {
@@ -62,7 +63,7 @@ class Main extends React.Component {
                     }`}
                     style={{display: 'none'}}
                 >
-                    <h2 className="major">Coming Soon...</h2>
+                    <ServicesPage/>
                     {close}
                 </article>
 

@@ -133,9 +133,6 @@ class IdeasForm extends React.Component {
                         <input type="submit" value="Submit Idea" className="special"
                                disabled={!this.state.formControls.idea.valid}/>
                     </li>
-                    <li>
-                        <input type="reset" value="Reset"/>
-                    </li>
                 </ul>
             </form>
         </div>);

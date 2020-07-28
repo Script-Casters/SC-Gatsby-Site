@@ -3,7 +3,7 @@ import ServicesForm from './ServicesForm';
 import IdeasForm from './IdeasForm';
 
 
-const servicesData = require('../../data/members');
+const servicesData = require('../../data/services');
 
 class ServicesPage extends React.Component {
     constructor() {
@@ -48,9 +48,10 @@ class ServicesPage extends React.Component {
                                 .keys(this.state.posts)
                                 .map(key => <div className="box">
                                     <h1>{this.state.posts[key].name}</h1>
-                                    <img className="image fit right" src={require('../../images/members/' + this.state.posts[key].img)}
+                                    <img className="image fit right" src={require('../../images/services/' + this.state.posts[key].img)}
                                         alt="img" />
                                     <p>{this.state.posts[key].desc}</p>
+                                    <h3>Est Cost: ${this.state.posts[key].estPrice}</h3>
                                     <div className="button-container">
                                     <a className="button" onClick= {() => {this.setState({selectedService : true})}}>Select Service</a>
                                     </div>

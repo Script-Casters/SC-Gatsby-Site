@@ -87,7 +87,7 @@ class Contact extends React.Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "Contact", ...formData })
+            body: encode({ "form-name": "contact", ...formData })
         })
             .then(() => alert("Form Submitted!"))
             .catch(error => alert(error));

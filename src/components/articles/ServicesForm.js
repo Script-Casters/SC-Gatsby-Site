@@ -98,7 +98,7 @@ class ServicesForm extends React.Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "Booking", ...formData })
+            body: encode({ "form-name": "booking", ...formData })
         })
             .then(() => alert("Form Submitted!"))
             .catch(error => alert(error));

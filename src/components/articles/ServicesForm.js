@@ -42,7 +42,12 @@ class ServicesForm extends React.Component {
                     minLength: 7,
                     isRequired: true
                 }
-            }
+            },
+            attachments: {
+                value: '',
+                placeholder: 'Send us some files'
+            },
+
         }
     };
 
@@ -93,7 +98,7 @@ class ServicesForm extends React.Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...formData })
+            body: encode({ "form-name": "Booking", ...formData })
         })
             .then(() => alert("Form Submitted!"))
             .catch(error => alert(error));
@@ -146,9 +151,9 @@ class ServicesForm extends React.Component {
                               onChange={this.changeHandler.bind(this)}
                               maxLength="3000"/>
                 </div>
-                <div className="field actions">
-                    <label htmlFor="message">Attachments</label>
-                    <input type="file" id="files" name="files" multiple></input>
+                <div className="field">
+                    <label htmlFor="attachments">Attachments</label>
+                    <input type="file" id="attachments" name="attachments" multiple></input>
                 </div>
                 <ul className="actions">
                     <li>

@@ -84,7 +84,7 @@ class IdeasForm extends React.Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "idea", ...formData })
+            body: encode({ "form-name": "Ideas", ...formData })
         })
             .then(() => alert("Idea Submitted!"))
             .catch(error => alert(error));

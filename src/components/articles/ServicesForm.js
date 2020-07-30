@@ -35,7 +35,13 @@ class ServicesForm extends React.Component {
             },
             message: {
                 value: '',
-                placeholder: 'Write a message to us'
+                placeholder: 'Write a message to us',
+                valid: false,
+                touched: false,
+                validationRules: {
+                    minLength: 7,
+                    isRequired: true
+                }
             }
         }
     };
@@ -113,8 +119,9 @@ class ServicesForm extends React.Component {
     render() {
         return (<div>
             <h2 className="major">Booking Form</h2>
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
-                <input type="hidden" name="form-name" value="contact"/>
+        <h3>Selected Service: {this.props.service}</h3>
+            <form name="booking" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
+                <input type="hidden" name="form-name" value="booking"/>
                 <div className="field half first">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" id="name"
@@ -132,16 +139,21 @@ class ServicesForm extends React.Component {
                            maxLength="120"/>
                 </div>
                 <div className="field">
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Tell us more about your request</label>
                     <textarea name="message" id="message" rows="4"
                               value={this.state.formControls.message.value}
+                              valid={this.state.formControls.email.valid}
                               onChange={this.changeHandler.bind(this)}
                               maxLength="3000"/>
+                </div>
+                <div className="field actions">
+                    <label htmlFor="message">Attachments</label>
+                    <input type="file" id="files" name="files" multiple></input>
                 </div>
                 <ul className="actions">
                     <li>
                         <input type="submit" value="Send Message" className="special"
-                               disabled={!(this.state.formControls.email.valid && this.state.formControls.name.valid)}/>
+                               disabled={!(this.state.formControls.email.valid && this.state.formControls.name.valid && this.state.formControls.message.valid)}/>
                     </li>
                     <li>
                         <input type="reset" value="Reset"/>

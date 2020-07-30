@@ -110,8 +110,8 @@ class IdeasForm extends React.Component {
     render() {
         return (<div>
             <h2 className="major">Have an app idea?</h2>
-            <form name="idea" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
-                <input type="hidden" name="form-name" value="contact"/>
+            <form name="ideas" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
+                <input type="hidden" name="form-name" value="ideas"/>
                 <div className="field half first">
                     <label htmlFor="name">Idea</label>
                     <input type="text" name="idea" id="idea"

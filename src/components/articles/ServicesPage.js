@@ -22,7 +22,7 @@ class ServicesPage extends React.Component {
     componentWillMount() {
         this.setState({
             posts: servicesData,
-            selectedService: false
+            selectedService: ''
         });
     }
 
@@ -30,9 +30,9 @@ class ServicesPage extends React.Component {
     render() {
         return (<div>
             {
-                this.state.selectedService ? 
+                this.state.selectedService.length > 0 ? 
                 <div>
-                <ServicesForm />
+                <ServicesForm service={this.state.selectedService}/>
                 <a className="button" onClick= {() => {this.setState({selectedService : false})}}>Cancel</a>
                 </div>
                  :
@@ -53,7 +53,7 @@ class ServicesPage extends React.Component {
                                     <p>{this.state.posts[key].desc}</p>
                                     <h3>Est Cost: ${this.state.posts[key].estPrice}</h3>
                                     <div className="button-container">
-                                    <a className="button" onClick= {() => {this.setState({selectedService : true})}}>Select Service</a>
+                                    <a className="button" onClick= {() => {this.setState({selectedService : this.state.posts[key].name})}}>Select Service</a>
                                     </div>
                                 </div>)}
                         </div>

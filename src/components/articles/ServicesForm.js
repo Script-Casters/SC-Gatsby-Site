@@ -100,7 +100,7 @@ class ServicesForm extends React.Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "booking", ...formData })
         })
-            .then(() => alert("Form Submitted!"))
+            .then(() => alert("Request Submitted!"))
             .catch(error => alert(error));
         this.resetStateValues();
     };
@@ -153,7 +153,9 @@ class ServicesForm extends React.Component {
                 </div>
                 <div className="field">
                     <label htmlFor="attachments">Attachments</label>
-                    <input type="file" id="attachments" name="attachments" multiple></input>
+                    <input type="file" id="attachments" name="attachments" multiple
+                        value={this.state.formControls.attachments.value}
+                        onChange={this.changeHandler.bind(this)}></input>
                 </div>
                 <ul className="actions">
                     <li>

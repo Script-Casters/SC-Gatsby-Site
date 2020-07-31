@@ -1,14 +1,14 @@
 [
   {
-    "name": "Overseas Basketball Connection",
-    "desc": "",
-    "img": "projects/obc.png",
-    "siteLink": "https://overseasbasketballconnection.com"
-  },
-  {
     "name": "Mad Beatz Philly",
     "desc": "Contracted to develop the new official website in Word Press for Mad Beatz Philly, a nonprofit organization devoted to providing inner city students in Philadelphia an avenue through the power of drum line.",
     "img": "projects/madbeatz.png",
     "siteLink": "https://www.madbeatzphilly.com"
+  },
+  {
+    "name": "Overseas Basketball Connection",
+    "desc": "OBC is a platform that connects basketball player with overseas basketball teams. Currently Serving thousands of players and hundreds of international teams!",
+    "img": "projects/obc.png",
+    "siteLink": "https://overseasbasketballconnection.com"
   }
 ]

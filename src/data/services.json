@@ -1,25 +1,25 @@
 [
   {
     "name": "Wordpress Site",
-    "desc": "You’re running a successful business and you have great ideas, it’s time for your website to reflect that. That’s where we can help with our WordPress expertise. We contruct WordPress projects that fit fast approaching deadlines and a variety of business needs. Whether your platform is a simple blog site, or you are looking to build a fully featured e-commerce platform, Scriptcasters can support all of your WordPress needs.",
+    "desc": "You’re running a successful business and you have great ideas - it’s time for your website to reflect that. That’s where we can help with our WordPress expertise. We contruct WordPress projects that fit fast approaching deadlines and a variety of business needs. Whether your platform is a simple blog site or you are looking to build a fully featured e-commerce platform, Scriptcasters can support all of your WordPress needs.",
     "img": "wordpress.png",
     "estPrice": "600+"
   },
   {
     "name": "Wix Site",
-    "desc": "Are you a small business looking to establish web presence but don't have the expertise or time to get a site up and running? Scriptcasters got you covered! We offer fully featured, beautifully designed Wix sites to fit your business needs and show off your services to the world.",
+    "desc": "Are you a small business looking to establish web presence but don't have the expertise or time to get a site up and running? Scriptcasters has you covered! We offer fully featured, beautifully designed Wix sites to fit your business needs and show off your services to the world.",
     "img": "wix.png",
     "estPrice": "500+"
   },
   {
     "name": "Custom Web App",
-    "desc": "Web applications are taking over the web! Web application serve features to customers that regular static websites just aren't cut out for. An example of a web app would be Netflix, while a website would be the Scriptcasters web site you are viewing now. If you desire complex platform features that you would like to be featured on a web based solution, a Scriptcasters custom web app may be the right service for you.",
+    "desc": "Web applications are taking over the web! Web applications serve features to customers that regular static websites just aren't cut out for. An example of a Web Application would be Netflix, while a website would be the Scriptcasters web site you are viewing now. If you desire complex platform features that you would like to be featured on a web based solution, a Scriptcasters custom web app may be the right service for you.",
     "img": "web.jpg",
     "estPrice": "1500+"
   },
   {
     "name": "Custom Mobile App",
-    "desc": "Scriptcasters custom mobile applicaitons are designed to be cross-platform by nature. What does that mean? We maintain one code base to be deployed to both Android and IOS. This mean faster development times, user experience is unified because they are viewing essentially the same app, and high scalability of the applicaiton. If you have a desire to construct a custom mobile application, Scriptcasters can help!",
+    "desc": "Scriptcasters custom mobile applicaitons are designed to be cross-platform by nature. What does that mean? We maintain one code base to be deployed to both Android and IOS. This mean faster development times, a more unified user experience, and high scalability of the application. If you have a desire to construct a custom mobile application, Scriptcasters can help!",
     "img": "mobile.png",
     "estPrice": "2000+"
   },

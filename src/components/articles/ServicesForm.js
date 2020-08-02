@@ -47,6 +47,7 @@ class ServicesForm extends React.Component {
                 value: '',
                 placeholder: 'Send us some files'
             },
+            selectedService: this.props.service
 
         }
     };

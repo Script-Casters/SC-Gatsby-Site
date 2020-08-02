@@ -50,7 +50,7 @@ class ServicesPage extends React.Component {
                                     <h1>{this.state.posts[key].name}</h1>
                                     <img className="image fit right" src={require('../../images/servicesoffered/' + this.state.posts[key].img)}
                                         alt="img" />
-                                    <p>{this.state.posts[key].desc}</p>
+                                    <p style={{ textAlign: 'justify'}}>{this.state.posts[key].desc}</p>
                                     <h3>Est Cost: ${this.state.posts[key].estPrice}</h3>
                                     <div className="button-container">
                                     <a className="button" onClick= {() => {this.setState({selectedService : this.state.posts[key].name})}}>Select Service</a>

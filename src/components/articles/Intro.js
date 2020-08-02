@@ -4,7 +4,7 @@ import visionimg from "../../images/vision-img.jpg";
 
 const Intro = () => {
     return (
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'justify', textJustify: 'inner-word' }}>
             <h2 className="major">OUR VISION</h2>
             <br />
             <h3>Scriptcasters is a network of specialized professionals that strive to create innovative technical solutions

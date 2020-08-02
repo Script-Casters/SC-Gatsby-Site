@@ -7,9 +7,9 @@ const Intro = () => {
         <div style={{ textAlign: 'center' }}>
             <h2 className="major">OUR VISION</h2>
             <br />
-            <h3>Scriptcasters is a network of specialized professionals that strive to create new technical solutions
-            to existing problems. Scriptcasters fosters an innovative environment nurtured by curious and
-                passionate technologists that aim to develop quality products in reasonable time frames.</h3>
+            <h3>Scriptcasters is a network of specialized professionals that strive to create innovative technical solutions
+            to complex problems. Scriptcasters fosters a creative environment nurtured by curious and
+                passionate technologists that aim to develop quality products.</h3>
             <br />
             <br />
             <br/>

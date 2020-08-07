@@ -1,5 +1,5 @@
 import React from "react";
-import {validate} from "../services/InputVal";
+import { validate } from "../services/InputVal";
 import * as rax from 'retry-axios';
 import axios from 'axios';
 
@@ -96,6 +96,7 @@ class ServicesForm extends React.Component {
         for (let formElementId in this.state.formControls) {
             formData[formElementId] = this.state.formControls[formElementId].value;
         }
+        console.log(formData);
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -106,18 +107,6 @@ class ServicesForm extends React.Component {
         this.resetStateValues();
     };
 
-    async sendFormData(formData) {
-        const url = "https://elemental-email-api.herokuapp.com/notification/contactform";
-
-        formData.appName = 'Frankie-Portfolio';
-        rax.attach();
-        return await axios.post(
-            url,
-            formData,
-            {headers: {'Content-Type': 'application/json'}}
-        );
-    }
-
     resetStateValues() {
         this.setState(ServicesForm.initState);
     }
@@ -125,32 +114,32 @@ class ServicesForm extends React.Component {
     render() {
         return (<div>
             <h2 className="major">Booking Form</h2>
-        <h3>Selected Service: {this.props.service}</h3>
+            <h3>Selected Service: {this.props.service}</h3>
             <form name="booking" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
-                <input type="hidden" name="form-name" value="booking"/>
+                <input type="hidden" name="form-name" value="booking" />
                 <div className="field half first">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" id="name"
-                           value={this.state.formControls.name.value}
-                           valid={this.state.formControls.name.valid}
-                           onChange={this.changeHandler.bind(this)}
-                           maxLength="120"/>
+                        value={this.state.formControls.name.value}
+                        valid={this.state.formControls.name.valid}
+                        onChange={this.changeHandler.bind(this)}
+                        maxLength="120" />
                 </div>
                 <div className="field half">
                     <label htmlFor="email">Email</label>
                     <input type="text" name="email" id="email"
-                           value={this.state.formControls.email.value}
-                           valid={this.state.formControls.email.valid}
-                           onChange={this.changeHandler.bind(this)}
-                           maxLength="120"/>
+                        value={this.state.formControls.email.value}
+                        valid={this.state.formControls.email.valid}
+                        onChange={this.changeHandler.bind(this)}
+                        maxLength="120" />
                 </div>
                 <div className="field">
                     <label htmlFor="message">Tell us more about your request</label>
                     <textarea name="message" id="message" rows="4"
-                              value={this.state.formControls.message.value}
-                              valid={this.state.formControls.email.valid}
-                              onChange={this.changeHandler.bind(this)}
-                              maxLength="3000"/>
+                        value={this.state.formControls.message.value}
+                        valid={this.state.formControls.email.valid}
+                        onChange={this.changeHandler.bind(this)}
+                        maxLength="3000" />
                 </div>
                 <div className="field">
                     <label htmlFor="attachments">Attachments</label>
@@ -161,10 +150,10 @@ class ServicesForm extends React.Component {
                 <ul className="actions">
                     <li>
                         <input type="submit" value="Send Message" className="special"
-                               disabled={!(this.state.formControls.email.valid && this.state.formControls.name.valid && this.state.formControls.message.valid)}/>
+                            disabled={!(this.state.formControls.email.valid && this.state.formControls.name.valid && this.state.formControls.message.valid)} />
                     </li>
                     <li>
-                        <input type="reset" value="Reset"/>
+                        <input type="reset" value="Reset" />
                     </li>
                 </ul>
             </form>

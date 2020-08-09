@@ -9,7 +9,7 @@
     "name": "Wix Site",
     "desc": "Are you a small business looking to establish web presence but don't have the expertise or time to get a site up and running? Scriptcasters has you covered! We offer fully featured, beautifully designed Wix sites to fit your business needs and show off your services to the world.",
     "img": "wix.png",
-    "estPrice": "600+"
+    "estPrice": "400+"
   },
   {
     "name": "Custom Web App",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Custom Mobile App",
-    "desc": "Scriptcasters custom mobile applicaitons are designed to be cross-platform by nature. What does that mean? We maintain one code base to be deployed to both Android and IOS. This mean faster development times, a more unified user experience, and high scalability of the application. If you have a desire to construct a custom mobile application, Scriptcasters can help!",
+    "desc": "Scriptcasters custom mobile applications are designed to be cross-platform by nature. What does that mean? We maintain one code base to be deployed to both Android and IOS. This mean faster development times, a more unified user experience, and high scalability of the application. If you have a desire to construct a custom mobile application, Scriptcasters can help!",
     "img": "mobile.png",
     "estPrice": "4000+"
   },

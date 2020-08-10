@@ -115,7 +115,7 @@ class ServicesForm extends React.Component {
         return (<div>
             <h2 className="major">Booking Form</h2>
             <h3>Selected Service: {this.props.service}</h3>
-            <form name="booking" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.formSubmitHandler}>
+            <form name="booking" method="post" data-netlify="true" onSubmit={this.formSubmitHandler}>
                 <input type="hidden" name="form-name" value="booking" />
                 <div className="field half first">
                     <label htmlFor="name">Name</label>

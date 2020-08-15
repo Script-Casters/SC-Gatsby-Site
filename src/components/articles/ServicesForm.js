@@ -141,12 +141,7 @@ class ServicesForm extends React.Component {
                         onChange={this.changeHandler.bind(this)}
                         maxLength="3000" />
                 </div>
-                <div className="field">
-                    <label htmlFor="attachments">Attachments</label>
-                    <input type="file" id="attachments" name="attachments" multiple
-                        value={this.state.formControls.attachments.value}
-                        onChange={this.changeHandler.bind(this)}></input>
-                </div>
+        
                 <ul className="actions">
                     <li>
                         <input type="submit" value="Send Message" className="special"

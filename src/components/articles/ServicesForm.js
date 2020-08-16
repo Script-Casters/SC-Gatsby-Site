@@ -54,7 +54,7 @@ class ServicesForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = ServicesForm.initState;
-        this.state['selectedService'] = props.service;
+
 
     }
 
@@ -110,6 +110,10 @@ class ServicesForm extends React.Component {
         this.setState(ServicesForm.initState);
     }
 
+    componentDidMount() {
+        this.setState({ selectedService: props.service });
+    }
+
     render() {
         return (<div>
             <h2 className="major">Booking Form</h2>
@@ -140,7 +144,7 @@ class ServicesForm extends React.Component {
                         onChange={this.changeHandler.bind(this)}
                         maxLength="3000" />
                 </div>
-        
+
                 <ul className="actions">
                     <li>
                         <input type="submit" value="Send Message" className="special"

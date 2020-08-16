@@ -46,7 +46,8 @@ class ServicesForm extends React.Component {
             attachments: {
                 value: '',
                 placeholder: 'Send us some files'
-            }
+            },
+            selectedService: ""
         }
     };
 

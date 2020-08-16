@@ -46,15 +46,14 @@ class ServicesForm extends React.Component {
             attachments: {
                 value: '',
                 placeholder: 'Send us some files'
-            },
-            selectedService: this.props.service
-
+            }
         }
     };
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = ServicesForm.initState;
+        this.state['selectedService'] = props.service;
 
     }
 

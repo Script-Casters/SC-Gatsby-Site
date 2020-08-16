@@ -47,7 +47,7 @@ class ServicesForm extends React.Component {
                 value: '',
                 placeholder: 'Send us some files'
             },
-            selectedService: ""
+            selectedService: ''
         }
     };
 
@@ -96,7 +96,6 @@ class ServicesForm extends React.Component {
         for (let formElementId in this.state.formControls) {
             formData[formElementId] = this.state.formControls[formElementId].value;
         }
-        console.log(formData);
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },

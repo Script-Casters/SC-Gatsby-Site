@@ -91,18 +91,6 @@ class IdeasForm extends React.Component {
         this.resetStateValues();
     };
 
-    async sendFormData(formData) {
-        const url = "https://elemental-email-api.herokuapp.com/notification/contactform";
-
-        formData.appName = 'Frankie-Portfolio';
-        rax.attach();
-        return await axios.post(
-            url,
-            formData,
-            {headers: {'Content-Type': 'application/json'}}
-        );
-    }
-
     resetStateValues() {
         this.setState(IdeasForm.initState);
     }

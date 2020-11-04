@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesForm from './ServicesForm';
+import ServicesTempFiller from './ServicesTempFiller'
 import IdeasForm from './IdeasForm';
 
 
@@ -32,8 +32,7 @@ class ServicesPage extends React.Component {
             {
                 this.state.selectedService.length > 0 ? 
                 <div>
-                <ServicesForm service={this.state.selectedService}/>
-                <a className="button" onClick= {() => {this.setState({selectedService : false})}}>Cancel</a>
+                <ServicesTempFiller service={this.state.selectedService}/>
                 </div>
                  :
                     <div>

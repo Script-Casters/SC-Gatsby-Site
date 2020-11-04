@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { validate } from "../services/InputVal";
 import * as rax from 'retry-axios';
 import axios from 'axios';
-import Dropzone from 'react-dropzone'
-import {useDropzone} from 'react-dropzone'
 
 const encode = (data) => {
     return Object.keys(data)
@@ -11,11 +9,8 @@ const encode = (data) => {
         .join("&");
 };
 
-const {getRootProps, getInputProps} = useDropzone();
 
-class ServicesForm extends React.Component {
-
-    selectedService;
+class ServicesTempFiller extends React.Component {
 
 
     static initState = {
@@ -51,19 +46,20 @@ class ServicesForm extends React.Component {
                     isRequired: true
                 }
             },
-            attachments: {
-                value: {},
-                placeholder: 'Send us some files'
-            },
-            selectedService: ''
+            clientmemberchoice: {
+                value: 'client',
+                valid: false,
+                touched: false,
+                validationRules: {
+                    isRequired: true
+                }
+            }
         }
     };
 
     constructor(props) {
         super(props);
-        this.state = ServicesForm.initState;
-        this.selectedService = props.selectedService;
-
+        this.state = ServicesTempFiller.initState;
     }
 
     changeHandler = (event) => {
@@ -95,6 +91,7 @@ class ServicesForm extends React.Component {
         });
 
     };
+
     formSubmitHandler = (event) => {
         event.preventDefault();
         const formData = {};
@@ -106,7 +103,7 @@ class ServicesForm extends React.Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "booking", ...formData })
+            body: encode({ "form-name": "prinquery", ...formData })
         })
             .then(() => alert("Request Submitted!"))
             .catch(error => alert(error));
@@ -114,19 +111,40 @@ class ServicesForm extends React.Component {
     };
 
     resetStateValues() {
-        this.setState(ServicesForm.initState);
+        this.setState(ServicesTempFiller.initState);
     }
 
     componentDidMount() {
-        this.setState({ selectedService: this.selectedService });
+        // this.setState({ selectedService: props.service });
     }
 
     render() {
         return (<div>
-            <h2 className="major">Booking Form</h2>
-            <h3>Selected Service: {this.props.service}</h3>
-            <form name="booking" method="post" data-netlify="true" onSubmit={this.formSubmitHandler}>
-                <input type="hidden" name="form-name" value="booking" />
+            <h1 className="center">New Project Bookings Unavailable</h1>
+            <p>We are currently not taking new clients, as we are in the middle of an intensive development period. 
+                We are constructing our first product, Project Raven. 
+                This is a tool aimed to make working on a tech project on both the member side and client side more efficient. 
+                We apologize for this inconvience and encourage you to stay in touch for more updates!</p>
+            
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <h3 className="major center">What is Script Casters up to?</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DkpkNw6-okY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            <h3>Want to stay connected and up to date?</h3>
+            <form name="prinquery" method="post" data-netlify="true" onSubmit={this.formSubmitHandler}>
+                <input type="hidden" name="form-name" value="prinquery" />
                 <div className="field half first">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" id="name"
@@ -144,23 +162,25 @@ class ServicesForm extends React.Component {
                         maxLength="120" />
                 </div>
                 <div className="field">
-                    <label htmlFor="message">Tell us more about your request</label>
+
+                    <input type="radio" name="clientmemberchoice" id="member"
+                        value="member"
+                        onChange={this.changeHandler.bind(this)} />
+                    <label htmlFor="member">Prospective Member</label>
+
+                    <input type="radio" name="clientmemberchoice" id="client"
+                        value="client"
+                        onChange={this.changeHandler.bind(this)} />
+                    <label htmlFor="client">Client</label>
+                </div>
+                <div className="field">
+                    <label htmlFor="message">Anything to note?</label>
                     <textarea name="message" id="message" rows="4"
                         value={this.state.formControls.message.value}
-                        valid={this.state.formControls.email.valid}
+                        valid={this.state.formControls.message.valid}
                         onChange={this.changeHandler.bind(this)}
                         maxLength="3000" />
                 </div>
-                <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
-                    {({ getRootProps, getInputProps }) => (
-                        <section>
-                            <div {...getRootProps()}>
-                                <input {...getInputProps()} />
-                                <p>Drag 'n' drop some files here, or click to select files</p>
-                            </div>
-                        </section>
-                    )}
-                </Dropzone>
                 <ul className="actions">
                     <li>
                         <input type="submit" value="Send Message" className="special"
@@ -177,4 +197,4 @@ class ServicesForm extends React.Component {
 
 }
 
-export default ServicesForm;
+export default ServicesTempFiller;

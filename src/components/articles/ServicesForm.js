@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { validate } from "../services/InputVal";
-import * as rax from 'retry-axios';
 import axios from 'axios';
 import Dropzone from 'react-dropzone'
 import {useDropzone} from 'react-dropzone'

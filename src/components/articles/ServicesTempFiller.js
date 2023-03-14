@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { validate } from "../services/InputVal";
-import * as rax from 'retry-axios';
 import axios from 'axios';
 
 const encode = (data) => {

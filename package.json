@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.3.4",
     "browser-monads": "^1.0.0",
     "emailjs": "^2.2.0",
     "emailjs-com": "^2.4.1",
@@ -14,13 +14,12 @@
     "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-sass": "^2.1.17",
-    "node-sass": "^4.13.1",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "react-dropzone": "^11.2.0",
     "react-helmet": "^5.2.1",
     "react-pdf": "^4.1.0",
-    "retry-axios": "^2.1.1"
+    "sass": "^1.59.2"
   },
   "keywords": [
     "gatsby"

@@ -1,7 +1,7 @@
 [
   {
     "name": "Mad Beatz Philly",
-    "desc": "Contracted to develop the new official website in Word Press for Mad Beatz Philly, a nonprofit organization devoted to providing inner city students in Philadelphia an avenue through the power of drum line.",
+    "desc": "We had the opportunity to construct the new official website in Word Press for Mad Beatz Philly, a nonprofit organization devoted to empowering students in Philadelphia through the power of drum line.",
     "img": "projects/madbeatz.png",
     "siteLink": "https://www.madbeatzphilly.com"
   },
@@ -9,6 +9,17 @@
     "name": "Overseas Basketball Connection",
     "desc": "OBC is a platform that connects basketball player with overseas basketball teams. Currently serving thousands of players and hundreds of international teams!",
     "img": "projects/obc.png",
-    "siteLink": "https://overseasbasketballconnection.com"
+    "siteLink": "https://overseasconnection.com"
+  },
+  {
+    "name": "Project Raven",
+    "desc": "Project Raven is the first Script Caster branded product that we are planning to release in the near future. A platform where clients and members come together to create amazing technological solutions. Clients will be able to create projects on the platform and fully manage them from start to finish in our easy-to-use interface.",
+    "img": "projects/raven-proj.png"
+  },
+  {
+    "name": "Portfolio Sites",
+    "desc": "We have helped artists, professionals, and more create beautiful and presentable portfolio websites to be able to showcase their brand. Each site is custom made and given the Script Caster personal touch. Click below to see an example from our founder!",
+    "img": "projects/portfolio-ex.jpeg",
+    "siteLink": "https://www.frankietheprogrammer.com"
   }
 ]
